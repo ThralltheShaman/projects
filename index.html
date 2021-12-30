@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="topheader">
+            <p>Хочешь обучиться ДОПОГ? Бесплатный живой вебинар уже 26 ноября (пятница)</p>
+            <button data-modal-target="#modal2" class="header_button">Принять участие</button>
+        </div>
+        <div class="bottom_header">
+            <img class="bottom_header_img" src="img/Логотип.png" alt="">
+            <img class="hamburger" src="/img/Бургер.png" alt="">
+            <ul class="unorder_first">
+               <li class="nav_item_first"><a href="#">Услуги</a></li><img class="list_dropwond_img" src="/img/Polygon 6.png" alt="">
+               <li class="nav_item_first"><a href="#">Цены</a></li>
+               <li class="nav_item_first"><a href="#">Ресурсы</a></li><img class="list_dropwond_img" src="/img/Polygon 6.png" alt="">
+               <li class="nav_item_first"><a href="#">О компании</a></li><img class="list_dropwond_img" src="/img/Polygon 6.png" alt="">
+               <li class="nav_item_first"><a href="#">Контакты</a></li>
+            </ul>
+            <div class="second_part_header">
+                <ul class="unordered_second">
+                    <li class="nav_item_second"><a href="#">+7 (8332) 322-413</a></li>
+                    <li class="nav_item_second"><a href="#">+7 (912) 823-22-62</a></li>
+                    <li class="nav_item_second mobile_dissapear"><a href="#">+7 (8332) 494-152</a></li>
+                    <li class="nav_item_second mobile_dissapear"><a href="#">+7 (922) 661-41-52</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+<!--hamberger start-->
+</div>
+<div class="dropdown_menu">
+    <ul>
+        <li class="dropmenu_size"><a href="#">Услуги</a></li>
+
+        <li class="menu_margins"><a href="#">Водить ДОПОГ</a></li>
+        <li class="menu_margins"><a href="#">Консультант ДОПОГ</a></li>
+
+        <li class="dropmenu_size"><a href="#">Цена</a></li>
+
+
+        <li class="dropmenu_size"><a href="#">Ресурсы</a></li>
+
+        <li class="menu_margins"><a href="#">Блог</a></li>
+        <li class="menu_margins"><a href="#">Учебные материалы</a></li>
+        <li class="menu_margins"><a href="#">Вопросы специалисту</a></li>
+        <li class="menu_margins"><a href="#">Документы</a></li>
+        <li class="menu_margins"><a href="#">Публикации</a></li>
+
+        <li class="dropmenu_size"><a href="#">О компании</a></li>
+
+        <li class="menu_margins"><a href="#">Преподаватели</a></li>
+        <li class="menu_margins"><a href="#">Свяжитесь с нами</a></li>
+        <li class="menu_margins"><a href="#">Вакансии</a></li>
+        <li class="menu_margins"><a href="#">Материально-техническое обеспечение</a></li>
+        <li class="menu_margins"><a href="#">Конфиденциальность</a></li>
+
+        <li class="dropmenu_size"><a href="#">Контакты</a></li>
+
+    </ul>
+</div>
+<script>
+const hamburger = document.querySelector('.hamburger')
+const dropdownMenu = document.querySelector('.dropdown_menu')
+hamburger.addEventListener('click', ()=>{
+    hamburger.classList.toggle('active')
+    dropdownMenu.classList.toggle('active')
+})
+</script>
+<!--hamburger end-->
+    </header>
+    <div class="hero_section">
+        <div class="first_text">
+            <h1 class="heading_1_hero">Обучение ДОПОГ</h1>
+            <p class="par_1_hero">Для того, чтобы иметь необходимые навыки и законное основание для перевозки некоторых грузов, необходимо пройти курсы ДОПОГ на перевозку опасных грузов (обучение). Не пытайтесь купить свидетельство ДОПОГ, это незаконно. Цена курсов будет несоизмеримо ниже возможных штрафов за нарушение правил.</p>    
+            <h2 class="heading_2_hero">Что такое ДОПОГ?</h2>
+            <p class="par_2_hero">ДОПОГ - это совокупность соглашений и предписаний, которую приняло большинство европейских стран, регламентирующая правила и нормы. По ним производится транспортировка веществ и товаров, которые могут представлять опасность. Курсы необходимо пройти для того, чтобы получить свидетельство для свободной езды на территории всего Евросоюза, а также некоторых стран средней Азии.</p>
+        </div >
+        <div class="hero_image_container">
+            <img class="hero_img" src="/img/Картинка1.png" alt="">   
+        </div>   
+        </div>
+        
+        <div class="card_heading">
+            <button class="hero_button" data-modal-target="#modal">Начать обучение</button>
+        <h2 class="card_heading">Подготовка проводится по следующим направлениям:</h2>
+    </div>
+<!--Popup start-->
+    <div class="modal" id="modal">
+        <h2>Заявка на обучение</h2>
+        <input class="input_zayavka" type="text" placeholder="Ваше имя">
+        <input class="input_zayavka" type="tel" placeholder="Ваш телефон">
+        <button class="zayavka_button" >Отправить</button>
+        <p>Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных данных.</p>
+    </div>
+    <div  id="overlay"></div>
+<!--Popup end-->
+<!--Popup start-->
+<div class="modal" id="modal2">
+    <h2>Заявка на участие в вебинаре</h2>
+    <input class="input_zayavka" type="text" placeholder="Ваше имя">
+    <input class="input_zayavka" type="tel" placeholder="Ваш телефон">
+    <input class="input_zayavka" type="email" placeholder="Ваш email">
+    <button class="zayavka_button">Отправить</button>
+    <p>Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных данных.</p>
+</div>
+
+<!--Popup end-->
+    <div class="card_first">
+        <div class="card_item">
+            <div class="text_container_card">
+            <img src="/img/Rectangle 10.png" alt="">
+            <h3>Водители</h3>
+            <p>производится информирование водителей непосредственно о том, как перевозить и хранить опасные вещества различных классов. ...</p>
+        </div>
+            <div class="button_div">
+            <button class="hero_button_cards">Подробнее</button>
+            </div>
+        </div>
+        <div class="card_item">
+            <div class="text_container_card">
+            <img src="/img/card2.png" alt="">
+            <h3>Консультанты</h3>
+            <p>согласно п.п. 1.8.3.1 первого тома, на предприятиях должны находиться специально обученные люди, которые отвечают за планирование, организацию и консультацию в вопросах перемещения сложных и опасных товаров и веществ ...</p>
+              </div>
+            <div class="button_div">
+            <button class="hero_button_cards">Подробнее</button>
+            </div>
+        </div>
+        <div class="card_item">
+            <div class="text_container_card">
+            <img src="/img/card3.png" alt="">
+            <h3>Материалы в помощь консультанту и водителю перевозящих опасные грузы</h3>
+            <p>Практические рекомендации по перевозке опасных грузов разных классов</p>
+          </div>
+            <div class="button_div">
+            <button class="hero_button_cards">Подробнее</button>
+             </div>
+        </div>
+    </div>
+    <div class="parahraph_center">
+        <p class="para_in_center">Вы можете пройти все эти курсы по ДОПОГ в Кирове (обучение). Стоимость составлять от 1000 рублей, в зависимости от выбора программы и направления.</p>
+    </div>
+    <div class="headings_in_center_before_cards">
+        <h2 class="first_heading_in_center">Обучение ДОПОГ с применением онлайн-технологий:<br> что будет на курсах?</h2>
+    </div>
+    <div class="headings_in_center_before_cards2">
+        <h4 class="second_heading_in_center">На базовом курсе обучения ДОПОГ в 2022 году, а также на курсах цистерны, класс 1 и класс 7 даются:</h4>
+    </div>
+
+
+    <!--4 cards starting-->
+    <div class="cards_second">
+        <div class="card_item_second">
+            <img src="/img/11.png" alt="">
+            <h5>Информация</h5>
+            <p>    Автомобильным транспортом ежедневно перевозится большое количество опасных грузов всех классов ...</p>
+        </div>
+
+        <div class="card_item_second">
+            <img src="/img/22.png" alt="">
+            <h5>Классификация</h5>
+            <p>Часть 2-я ДОПОГ классифицирует опасные грузы, предусмотрев следующие классы:
+                Класс 1  Взрывчатые ...</p>
+        </div>
+
+        <div class="card_item_second">
+            <img src="/img/33.png" alt="">
+            <h5>Документация</h5>
+            <p>нормы маркировки, знаки и таблички</p>
+        </div>
+
+        <div class="card_item_second">
+            <img src="/img/44.png" alt="">
+            <h5>Требования</h5>
+            <p>к эксплуатации контейнеров, цистерн, упаковок, специализированных инструментов и инвентаря, а также ТС в целом</p>
+        </div>
+    </div>
+    <div class="button_under_cards_second">
+        <button data-modal-target="#modal">Начать обучение</button>
+    </div>
+
+
+    <!--FAQ starting-->
+    
+    <div class="faq_headings2">
+        <div class="container_headings">
+        <h2 class="blue_text blue_size1">Часто задаваемые вопросы</h2>
+        <h3 class="blue_text blue_size2">Какие требуются документы на ДОПОГ обучение?</h3>
+        <p>Для записи на обучение необходимо иметь стаж не менее 3 лет на категории С, подтверждённый документально.</p>
+        <h3 class="blue_text blue_size2">Какие документы нужны для допуска к сдаче экзамена после обучения? </h3>
+    </div>
+    </div>
+ <!--
+    <div class="faq_container">
+        <div class="faq_right">
+        <div class="faq_item">
+            <img src="/img/faq1.png" alt="">
+            <span class="faq_span">Паспорт</span>
+        </div>
+
+        <div class="faq_item">
+            <img src="/img/faq2.png" alt="">
+            <span class="faq_span">Водительское удостоверение</span>
+        </div>
+
+        <div class="faq_item">
+            <img src="/img/faq3.png" alt="">
+            <span class="faq_span">Стаж в категории С от 3 лет</span>
+        </div>
+    </div>
+
+        <div class="faq_left">
+        <div class="faq_item">
+            <img src="/img/faq4.png" alt="">
+            <span class="faq_span">Заявление</span>
+        </div>
+
+        <div class="faq_item">
+            <img src="/img/faq5.png" alt="">
+            <span class="faq_span">Экзаменационные листы</span>
+        </div>
+
+        <div class="faq_item">
+            <img src="/img/faq6.png" alt="">
+            <span class="faq_span">Свидетельство об окончании курсов</span>
+        </div>
+    </div>
+    </div>
+
+-->
+
+    <div class="faq_container">
+        <div class="faq_right">
+        <ul>
+            <li class="faq_item">
+                <img src="/img/faq1.png" alt="">
+                <span class="faq_span">Паспорт</span>
+            </li>
+    
+            <li class="faq_item">
+                <img src="/img/faq2.png" alt="">
+                <span class="faq_span">Водительское удостоверение</span>
+            </li>
+    
+            <li class="faq_item">
+                <img src="/img/faq3.png" alt="">
+                <span class="faq_span">Стаж в категории С от 3 лет</span>
+            </li>
+    
+        </ul>
+    </div>
+    
+    <div class="faq_left">
+        <ul>
+            <li class="faq_item">
+                <img src="/img/faq4.png" alt="">
+                <span class="faq_span">Заявление</span>
+            </li>
+    
+            <li class="faq_item">
+                <img src="/img/faq5.png" alt="">
+                <span class="faq_span">Экзаменационные листы</span>
+            </li>
+    
+            <li class="faq_item">
+                <img src="/img/faq6.png" alt="">
+                <span class="faq_span">Свидетельство об окончании курсов</span>
+            </li>
+    
+        </ul>
+    </div>
+    </div>
+     <!--Where are u-->
+     
+         <div class="location_headings">
+             <div class="container_location">
+             <h3 class="heading_in_location">Где вы находитесь?</h3>
+             <p>Мы находимся по адресу: г. Киров, ул. Московская 1В (Стадион “Динамо”).</p>
+         </div>
+        </div>
+
+         <div class="map_image">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2078.451018765692!2d49.683517916457845!3d58.604757075945805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43fcf44a89465b45%3A0xaa56b680fe70565e!2z0JzQvtGB0LrQvtCy0YHQutCw0Y8g0YPQuy4sIDEg0JIsINCa0LjRgNC-0LIsINCa0LjRgNC-0LLRgdC60LDRjyDQvtCx0LsuLCA2MTAwMDA!5e0!3m2!1sru!2sru!4v1640264141256!5m2!1sru!2sru" width=1100" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         </div>
+         <div class="location_container_button">
+              <button data-modal-target="#modal4" class="location_button">Задать вопрос</button>
+        </div>
+<!--Popup start-->
+<div class="modal" id="modal4">
+    <h2>Задать вопрос</h2>
+    <input class="input_zayavka" type="text" placeholder="Ваше имя">
+    <input class="input_zayavka" type="tel" placeholder="Ваш телефон">
+    <input class="input_zayavka" type="email" placeholder="Ваш email">
+    <input class="input_zayavka1" type="text" placeholder="Ваш вопрос">
+    <button class="zayavka_button">Отправить</button>
+    <p>Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных данных.</p>
+</div>
+<!--Popup end-->
+        <!--course-->
+        <div class="heading_course">
+            <h2>ДОПОГ - программы обучения</h2>
+        </div>
+
+        <div class="course_container">
+                <p>Наш УЧЕБНЫЙ АВТО-ЦЕНТР предлагает 4 программы, по которым можно пройти обучение на ДОПОГ в Кирове. Каждая из программ позволяет водителям перевозить различные грузы, потенциально представляющие опасность, поэтому внимательно изучите эту информацию, чтобы получить именно те знания, которые вам необходимы.</p>
+        </div>
+
+       
+<!--course
+            <div class="course_icon-text_container">
+                <img class="course_img" src="/img/icon.png" alt="">
+                <span class="course_span">ДОПОГ (базовый курс) – длится 28 академических часов. В процессе водитель получит основные знания о ДОПОГ. Стоимость обучения – от 2000 рублей.</span>
+            </div>
+
+            <div class="course_icon-text_container">
+                <img class="course_img" src="/img/icon.png" alt="">
+                <span class="course_span">Транспортировка опасных грузов в цистернах – длится 16 академических часов. Водитель будет обучен специализированным навыкам того, как перевозить и хранить жидкие грузы в цистернах, которые могут представлять опасность. Также будут рассмотрены особенности заливки, слива и так далее. Цена обучения – от 1000 рублей.</span>
+            </div>
+
+            <div class="course_icon-text_container">
+                <img class="course_img" src="/img/icon.png" alt="">
+                <span class="course_span">Перевозка взрывоопасных веществ и изделий – длится 12 академических часов. На данном курсе будут даны основные знания о опасных грузах первого класса. Стоимость - от 1000 рублей.</span>
+            </div>
+
+            <div class="course_icon-text_container">
+                <img class="course_img" src="/img/icon.png" alt="">
+                <span class="course_span">Транспортировка грузов класса опасности 7 – длится 12 академических часов. В рамках этой программы ДОПОГ обучение водителей будет производиться на тему транспортировки и хранения радиоактивных веществ. Обучиться на ДОПОГ по данной программе можно от 1000 рублей.</span>
+            </div>
+
+            <div class="course_container_button">
+                <button data-modal-target="#modal3" class="location_button">Отправить информацию о курсах на e-mail </button>
+          </div>
+
+-->
+
+
+
+<div class="course_icon-text_container">
+    <ul>
+        <li class="course_icon-text_container">
+            <img class="course_img" src="/img/icon.png" alt="">
+            <span class="course_span">ДОПОГ (базовый курс) – длится 28 академических часов. В процессе водитель получит основные знания о ДОПОГ. Стоимость обучения – от 2000 рублей.</span>
+        </li>
+
+        <li class="course_icon-text_container">
+            <img class="course_img" src="/img/icon.png" alt="">
+            <span class="course_span">Транспортировка опасных грузов в цистернах – длится 16 академических часов. Водитель будет обучен специализированным навыкам того, как перевозить и хранить жидкие грузы в цистернах, которые могут представлять опасность. Также будут рассмотрены особенности заливки, слива и так далее. Цена обучения – от 1000 рублей.</span>
+        </li>
+
+        <li class="course_icon-text_container">
+            <img class="course_img" src="/img/icon.png" alt="">
+            <span class="course_span">Перевозка взрывоопасных веществ и изделий – длится 12 академических часов. На данном курсе будут даны основные знания о опасных грузах первого класса. Стоимость - от 1000 рублей.</span>
+        </li>
+
+        <li class="course_icon-text_container">
+            <img class="course_img" src="/img/icon.png" alt="">
+            <span class="course_span">Транспортировка грузов класса опасности 7 – длится 12 академических часов. В рамках этой программы ДОПОГ обучение водителей будет производиться на тему транспортировки и хранения радиоактивных веществ. Обучиться на ДОПОГ по данной программе можно от 1000 рублей.</span>
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="course_container_button">
+    <button data-modal-target="#modal3" class="location_button">Отправить информацию о курсах на e-mail </button>
+</div>
+
+<!--Popup start-->
+
+
+
+          <div class="modal" id="modal3">
+            <h2>Получить информацию о курсах</h2>
+            <input class="input_zayavka" type="text" placeholder="Ваше имя">
+            <input class="input_zayavka" type="email" placeholder="Ваш email">
+            <div class="checkbox_form">
+    
+                <p class="heading_inside">Отметьте названия курсов</p>
+                
+                <div class="checkbox_div_inside">
+    
+                   
+    
+                 <input type="checkbox" name="myCheckboxName" id="myCheckboxID">
+                 <label for="myCheckboxID">Водитель по перевозке опасных грузов</label>
+                </div>
+    
+                 <div class="checkbox_div_inside">
+    
+                 <input type="checkbox" name="myCheckboxName" id="myCheckboxID2">
+                 <label for="myCheckboxID2">Консультант по перевозке опасных грузов</label>
+                </div>
+    
+                 <div class="checkbox_div_inside">
+                 <input type="checkbox" name="myCheckboxName" id="myCheckboxID3">
+                 <label for="myCheckboxID3">Специалист по безопасности дорожного движения</label>
+                </div>
+    
+                 <div class="checkbox_div_inside">
+                 <input type="checkbox" name="myCheckboxName" id="myCheckboxID4">
+                 <label for="myCheckboxID4">Все вышеперечисленные</label>
+                </div>
+    
+                </div>
+             
+            <button class="zayavka_button">Отправить</button>
+            <p>Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных данных.</p>
+        </div>
+    
+
+
+
+<!--Popup end-->
+
+
+
+          <!--Feedback cards-->
+          <div class="heading_feed">
+              <h2>Отзывы наших клиентов</h2>
+          </div>
+
+
+          <div class="feed_container">
+              <div class="feed_item"> 
+                 <div class="feed_img_nested">
+                  <img class="img-feed" src="/img/feed1.png" alt="">
+                </div>
+                <div class="para_feedback">
+                  <span class="feed_para">Выражаю благодарность коллективу ЧОУ ДПО “Учебный авто-центр” за то, что отличные преподаватели подробно объяснили весь материал. Кабинеты отлично оборудованы ...</span>
+                  <p class="feed_text_align feed_name">Медведев Сергей</p>
+                  <p class="feed_text_align">8 (909) 719-64-37</p>
+                </div>
+              </div>
+
+              <div class="feed_item">
+                <div class="feed_img_nested">
+                <img src="/img/feed2.png" alt="">
+            </div>
+            <div class="para_feedback">
+                <span class="feed_para">Проходил обучение г. Киров ул. Московская 1в. Для обучения на основные грузы класс оборудован хорошо. Материал объясняют на отлично. Экзамен сдала вся группа.</span>
+                <p class="feed_text_align feed_name">Санталов Р. И.</p>
+                <p class="feed_text_align">8 (912) 367-41-97</p>
+            </div>
+            </div>
+
+            <div class="feed_item">
+                <div class="feed_img_nested">
+                <img src="/img/feed3.png" alt="">
+            </div>
+            <div class="para_feedback">
+                <span class="feed_para">Выражаю благодарность учебному заведению авто- центру, находящемуся на стадионе “Динамо”, оборудованный класс, хорошо и доходчиво объясняют. Сдал с первого раза.</span>
+                <p class="feed_text_align feed_name">водитель Данилин А. М.</p>
+                <p class="feed_text_align">30.11.21</p>
+            </div>
+            </div>
+          </div>
+
+
+          <div class="ready_study">
+              <div class="ready_img">
+                  <img src="/img/study.png" alt="">
+              </div>
+              <div class="ready_text">
+                  <p class="ready_heading">Готовы приступить к обучению?</p>
+                  <p class="ready_text_second">Мы приложим все усилия, чтобы сотрудничать с нами вам понравилось.</p>
+                  <button data-modal-target="#modal" class="study_button">Начните!</button>
+              </div>
+          </div>
+
+        <!--YT-->
+        <div class="yt_heading">
+            <h2>Наш YouTube-канал</h2>
+        </div>
+          <div class="our_yt">
+              <div class="yt_text">
+                  <p class="para_yt">Учебный Авто-Центр - частное образовательное учреждение дополнительного профессионального образования. Мы делаем обучение комфортным!</p>
+                  <button class="yt_button" ><a href="https://www.youtube.com/user/jawed">Перейти на YouTube</a></button> 
+              </div>
+              <div class="yt_videos">
+                <iframe width="360" height="200" src="https://www.youtube.com/embed/jNQXAC9IVRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="yt_videos2">
+                <iframe width="360" height="200" src="https://www.youtube.com/embed/jNQXAC9IVRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+
+
+            <!--Blogs-->
+
+            <div class="blogs_heading">
+                <h2>Самые популярные статьи</h2>
+            </div>
+
+            <div class="blogs_container">
+                <div class="blog_item">
+                    <img src="/img/blog1.png" alt="">
+                    <p class="blog_heading">Пример экзаменационного билета по базовому курсу</p>
+                    <p class="blog_text_para">Экзаменационный билет по базовому курсу</p>
+                    <p class="blog_span"><a href="#">Читать далее ></a></p>
+                </div>
+
+                <div class="blog_item">
+                    <img src="/img/blog2.png" alt="">
+                    <p class="blog_heading">Что необходимо сделать чтобы получить свидетельство ДОПОГ?</p>
+                    <p class="blog_text_para">Записаться на курсы в ЧОУ ДПО “Учебный авто-центр ...</p>
+                    <p class="blog_span"><a href="#">Читать далее ></a></p>
+                </div>
+
+                <div class="blog_item">
+                    <img src="/img/blog3.png" alt="">
+                    <p class="blog_heading">Практические задания для консультантов ДОПОГ</p>
+                    <p class="blog_text_para">Объявление о собрании дома называется сообщением о проведении собрания в мкд. Существуют правила, определённые законодательством РФ, несоблюдение которых может поставить под сомнение...</p>
+                    <p class="blog_span"><a href="#">Читать далее ></a></p>
+                </div>
+
+            </div>
+
+            
+            <!--Footer-->
+
+            <div class="footer_container">
+                <div class="footer_item item1">
+                    <img class="item1_img" src="/img/Логотип.png" alt="">
+                    <p>Адрес: 610000, г. Киров, 
+                        ул. Московская, д.1в</p>
+                    <p>ЧОУ ДПО “Учебный авто-центр” 2020 - 2021 Все права защищены.</p>
+                </div>
+
+            <div class="inside_container">
+                <div class="footer_item footer_inside">
+                    <ul>
+                        <li class="footer_heading_inside"><a href="#">Услуги</a></li>  
+                        <li><a href="#">Водить ДОПОГ</a></li> 
+                        <li><a href="#">Консультант ДОПОГ</a></li>  
+
+                        <li class="footer_heading_inside"><a href="#">Цена</a></li>  
+
+                        <li class="footer_heading_inside"><a href="#">Ресурсы</a></li>  
+
+                        <li><a href="#">Блог</a> </li> 
+                        <li><a href="#">Учебные материалы</a>  </li>
+                        <li><a href="#">Вопросы специалисту</a> </li> 
+                        <li><a href="#">Документы</a></li>  
+                        <li><a href="#">Публикации</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_item footer_inside inside_item1">
+                    <ul>
+                        <li class="footer_heading_inside"><a href="#">О компании</a></li>
+
+                        <li><a href="#">Преподаватели</a></li>
+                        <li><a href="#">Свяжитесь с нами</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Материально-техническое<br>обеспечение</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                        <li class="footer_heading_inside"><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+                <div class="footer_item item3">
+                    <div class="footer_container_logos">
+                        <a href="#"><img src="/img/VK_Monochrome_Compact_Logo 1.png" alt=""></a>
+                        <a href="#"><img src="/img/youtube_social_circle_red 1.png" alt=""></a>
+                </div>
+                    <ul>
+                        <li><a href="#">+7 (8332) 32-24-13</a></li>
+                        <li><a href="#">+7 (912) 823-22-62</a></li>
+                        <li><a href="#">+7 (8332) 49-41-52</a></li>
+                        <li><a href="#">+7 (922) 661-41-52</a></li>
+
+                        <li><a href="#">bdd16@mail.ru</a></li>
+                        <li><a href="#">nouuaz@mail.ru</a></li>
+                        <li><a href="#">bdd43@mail.ru</a></li>
+                    </ul>
+                </div>
+                <div class="footer_item item4">
+                    <button id="btnScrollToTop">
+                    <img src="/img/кнопкаВверх.png" alt="">
+                </button>
+                </div>
+            </div>
+<script>
+    const btnScrollToTop=document.querySelector('#btnScrollToTop')
+    btnScrollToTop.addEventListener('click', ()=>{
+        window.scrollTo({
+            top:0,
+            left:0,
+            behavior:"smooth"
+        })
+    })
+</script>
+             <!--second footer-->
+             <div class="second_footer">
+                    <a href="#">Политика конфиденциальности</a> 
+                    <a href="#">Отказ от ответственности</a> 
+                    <a href="#">Согласие с рассылкой</a> 
+                    <a href="#">Гарантия возврата</a> 
+                    <a href="#">Оферта</a> 
+             </div>
+
+</body>
+</html>

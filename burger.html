@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="burgermenu.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hamburger">
+
+    
+    <img  src="/img/Бургер.png" alt="">
+</div>
+    <div class="dropdown_menu">
+        <ul>
+            <li class="dropmenu_size"><a href="#">Услуги</a></li>
+
+            <li class="menu_margins"><a href="#">Водить ДОПОГ</a></li>
+            <li class="menu_margins"><a href="#">Консультант ДОПОГ</a></li>
+
+            <li class="dropmenu_size"><a href="#">Цена</a></li>
+
+
+            <li class="dropmenu_size"><a href="#">Ресурсы</a></li>
+
+            <li class="menu_margins"><a href="#">Блог</a></li>
+            <li class="menu_margins"><a href="#">Учебные материалы</a></li>
+            <li class="menu_margins"><a href="#">Вопросы специалисту</a></li>
+            <li class="menu_margins"><a href="#">Документы</a></li>
+            <li class="menu_margins"><a href="#">Публикации</a></li>
+
+            <li class="dropmenu_size"><a href="#">О компании</a></li>
+
+            <li class="menu_margins"><a href="#">Преподаватели</a></li>
+            <li class="menu_margins"><a href="#">Свяжитесь с нами</a></li>
+            <li class="menu_margins"><a href="#">Вакансии</a></li>
+            <li class="menu_margins"><a href="#">Материально-техническое обеспечение</a></li>
+            <li class="menu_margins"><a href="#">Конфиденциальность</a></li>
+
+            <li class="dropmenu_size"><a href="#">Контакты</a></li>
+
+        </ul>
+    </div>
+<script>
+    const hamburger = document.querySelector('.hamburger')
+    const dropdownMenu = document.querySelector('.dropdown_menu')
+    hamburger.addEventListener('click', ()=>{
+        hamburger.classList.toggle('active')
+        dropdownMenu.classList.toggle('active')
+    })
+</script>
+</body>
+</html>

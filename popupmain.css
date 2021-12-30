@@ -1,0 +1,141 @@
+html{
+    font-family: sans-serif;
+}
+.modal{
+display: flex;
+flex-direction: column;
+width: 768px;
+justify-content: center;
+margin: 0 auto;
+align-items: center;
+border: solid 1px #AAAAAA;
+border-radius: 10px;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%) scale(1);
+background-color: white;
+transition: 200ms ease-in-out;
+z-index: 10;
+}
+.modal.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+#overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+}
+.overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.input_zayavka{
+    width: 704px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+   
+    color: #AAAAAA;
+}
+.zayavka_button{
+    background-color: #F16334;
+    color: white;
+    border: solid 1px #F16334;
+    border-radius: 32px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    height: 54px;
+}
+.zayavka h2{
+font-size: 36px;
+margin-bottom: 50px;
+margin-top: 40px;
+
+}
+.input_zayavka::placeholder{
+    color: #AAAAAA;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+
+
+
+.yourquestion{
+    padding-bottom:120px;
+}
+
+
+
+
+.checkbox_form{
+    width: 704px;
+   border: solid 1px #AAAAAA;
+   margin-bottom: 30px;
+}
+.heading_inside{
+    font-size: 24px;
+    margin-left: 10px
+}
+.checkbox_div_inside{
+    padding: 10px;
+}
+.checkbox_div_inside{
+    font-size: 20px;
+}
+.checkbox_div_inside{
+    border: solid 1px #AAAAAA;
+    margin: 20px;
+}
+
+
+
+.dropdown_menu{
+    width: 321px;
+    height: 673px;
+    border: solid 1px #AAAAAA;
+    border-radius: 10px;
+}
+
+.dropdown_menu ul{
+    list-style-type: none;
+    margin-top: 40px;
+}
+.dropdown_menu ul li{
+    margin-bottom: 13px;
+  
+}
+.dropmenu_size{
+    font-size: 20px;
+}
+
+.menu_margins{
+    margin-left: 5px;
+}
+
+
+
+.input_zayavka1{
+    width: 704px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    margin-bottom: 20px;
+   
+    color: #AAAAAA;
+}
+
+.input_zayavka1::placeholder{
+    color: #AAAAAA;
+    padding-left: 20px;
+    font-size: 20px;
+}
